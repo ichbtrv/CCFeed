@@ -1,10 +1,7 @@
 import AccessDenied from 'components/auth/AccessDenied'
 
-import Image from 'next/image'
-
 import React from 'react'
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
-import Layout from '../components/layout/Layout'
 
 import { useSession, getSession } from 'next-auth/react'
 import prisma from '../lib/prisma'
