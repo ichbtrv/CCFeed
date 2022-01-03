@@ -13,6 +13,8 @@ export default async function handle(
 
   if (req.method === 'DELETE') {
     if (session) {
+      console.log(postId)
+
       //@ts-ignore
       const post = await prisma.post.delete({
         where: { id: String(postId) },

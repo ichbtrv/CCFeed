@@ -34,12 +34,12 @@ const PostForm = () => {
         onSubmit={async (values, actions) => {
           try {
             const body = { title, content }
-            await fetch(`https://profile-feed.vercel.app/api/post`, {
+            await fetch(`https://localhost:3000/api/post`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(body),
             })
-            await Router.push('/drafts')
+            await Router.push('/success')
           } catch (error) {
             console.error(error)
           }

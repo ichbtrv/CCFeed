@@ -11,25 +11,27 @@ export default function Navbar() {
         <div className="flex w-screen justify-between">
           <div className="flex flex-wrap">
             <li className="hover:bg-gray-100">
-              <a
-                href="./"
-                className="h-16 px-4 flex  justify-center items-center w-full
+              <Link href="/" passHref>
+                <a
+                  href=""
+                  className="h-16 px-4 flex  justify-center items-center w-full
 					focus:text-orange-500"
-              >
-                <svg
-                  width="48px"
-                  height="48px"
-                  viewBox="0 0 25 48"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="fill-black-500  mt-4"
-                  fill="fill-orange-500"
                 >
-                  <g id="cc">
-                    <path d="M14,23H6a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3h8a1,1,0,0,1,0,2H6a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h8a1,1,0,0,1,0,2Z" />
-                    <path d="M28,23H20a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3h8a1,1,0,0,1,0,2H20a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h8a1,1,0,0,1,0,2Z" />
-                  </g>
-                </svg>
-              </a>
+                  <svg
+                    width="48px"
+                    height="48px"
+                    viewBox="0 0 25 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="fill-black-500  mt-4"
+                    fill="fill-orange-500"
+                  >
+                    <g id="cc">
+                      <path d="M14,23H6a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3h8a1,1,0,0,1,0,2H6a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h8a1,1,0,0,1,0,2Z" />
+                      <path d="M28,23H20a3,3,0,0,1-3-3V13a3,3,0,0,1,3-3h8a1,1,0,0,1,0,2H20a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h8a1,1,0,0,1,0,2Z" />
+                    </g>
+                  </svg>
+                </a>
+              </Link>
             </li>
             {session ? (
               <li className="my-4 hover:bg-gray-100 ">

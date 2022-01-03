@@ -84,7 +84,7 @@ const UploadForm = () => {
     </PageContainer>
   ) : (
     <PageContainer>
-      <Spinner displayed={isSubmitting} />
+      <Spinner displayed={true} />
     </PageContainer>
   )
 }
