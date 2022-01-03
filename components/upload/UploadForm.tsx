@@ -5,6 +5,8 @@ import { Formik, Form, ErrorMessage } from 'formik'
 import Router from 'next/router'
 import { useState } from 'react'
 
+import { mediaState } from '../../store/store'
+
 import * as Yup from 'yup'
 
 const UploadForm = () => {
@@ -31,10 +33,12 @@ const UploadForm = () => {
             const { data } = await axios.post('/api/upload/upload', formData)
 
             setFieldValue('mediaPreview', data.url)
+            mediaState.mediaUrl = data.url
           } catch (err) {
             console.log(err)
           } finally {
             setIsSubmitting(false)
+
             await Router.push('/create')
           }
         }}

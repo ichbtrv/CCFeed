@@ -35,7 +35,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
     const result = await imagekit.upload({
       file: contents,
-      fileName: 'test.mov',
+      fileName: 'test.jpg',
     })
     if (result) {
       const url = imagekit.url({
