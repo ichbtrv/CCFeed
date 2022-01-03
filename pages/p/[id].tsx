@@ -1,6 +1,5 @@
 import React from 'react'
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
-import Layout from '../../components/layout/Layout'
 import Router from 'next/router'
 
 import prisma from '../../lib/prisma'
