@@ -7,8 +7,8 @@
 // Breakdown of DB options and features for Prisma.io:
 // https://www.prisma.io/docs/reference/database-reference/database-features
 datasource db {
-  provider = "sqlite"
-  url      = "file:./deve.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 // Everything from here down is copy-pasted from the recommended schema from the

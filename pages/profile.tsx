@@ -49,13 +49,13 @@ export default function ProfilePage({
   return (
     <>
       <div className={'lg:my-12'}>
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={session.user.image}
           height="150"
           width="150"
-          alt=" "
-          className="rounded-full"
-          quality={100}
+          alt="profile image"
+          className="rounded-full mx-2"
         />
       </div>
       <h1 className="text-2xl m-4 pb-10 lg:fixed top-20">
