@@ -18,7 +18,7 @@ const Post: React.FC<{ post: PostProps }> = ({ post }) => {
   const authorName = post.author ? post.author.name : 'Unknown author'
   return (
     <div
-      className="flex flex-col justify-center flex-1 my-4"
+      className="flex flex-col justify-center flex-1 mb-4"
       onClick={() => Router.push('/p/[id]', `/p/${post.id}`)}
     >
       <h1 className="text-2xl flex-auto h5 font-haas ml-2">{post.title}</h1>

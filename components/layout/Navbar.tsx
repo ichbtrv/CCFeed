@@ -6,7 +6,7 @@ import LogoutRed from './navbaricons/LogoutRed'
 export default function Navbar() {
   const { data: session } = useSession()
   return (
-    <div className="min-w-screen bg-white text-gray-700 shadow items-center h-full pt-2">
+    <div className="min-w-screen bg-white text-gray-700 shadow items-center h-full pt-4">
       <ul>
         <div className="flex w-screen justify-between">
           <div className="flex flex-wrap">
