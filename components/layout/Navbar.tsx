@@ -6,7 +6,7 @@ import LogoutRed from './navbaricons/LogoutRed'
 export default function Navbar() {
   const { data: session } = useSession()
   return (
-    <div className="min-w-screen bg-white text-gray-700 shadow items-center h-full">
+    <div className="min-w-screen bg-white text-gray-700 shadow items-center h-full pt-2">
       <ul>
         <div className="flex w-screen justify-between">
           <div className="flex flex-wrap">
@@ -95,7 +95,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:bg-gray-100">
-              <Link href="./settings" passHref>
+              <Link href="/settings" passHref>
                 <a
                   className="h-16 px-4  flex justify-center items-center w-full
 					focus:text-orange-500"
