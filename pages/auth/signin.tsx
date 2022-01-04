@@ -10,8 +10,8 @@ interface IProvider {
 }
 
 export default function SignIn({
-  providers,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+      providers,
+    }: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const { data: session } = useSession()
 
   useEffect(() => {
