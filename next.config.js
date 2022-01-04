@@ -1,5 +1,10 @@
-module.exports = {
+const withPWA = require('next-pwa')
+
+module.exports = withPWA({
   reactStrictMode: true,
+  pwa: {
+    dest: 'public',
+  },
   images: {
     domains: [
       'lh3.googleusercontent.com',
@@ -13,4 +18,4 @@ module.exports = {
   videos: {
     domains: ['res.cloudinary.com'],
   },
-}
+})
