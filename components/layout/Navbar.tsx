@@ -72,7 +72,7 @@ export default function Navbar() {
                     viewBox="0 0 455 455"
                   >
                     <polygon
-                      points="455,212.5 242.5,212.5 242.5,0 212.5,0 212.5,212.5 0,212.5 0,242.5 212.5,242.5 212.5,455 242.5,455 242.5,242.5 
+                      points="455,212.5 242.5,212.5 242.5,0 212.5,0 212.5,212.5 0,212.5 0,242.5 212.5,242.5 212.5,455 242.5,455 242.5,242.5
 	455,242.5 "
                     />
                     <g></g>
@@ -97,7 +97,7 @@ export default function Navbar() {
             <li className="hover:bg-gray-100">
               <Link href="./settings" passHref>
                 <a
-                  className="h-16 px-4 flex flex justify-center items-center w-full
+                  className="h-16 px-4  flex justify-center items-center w-full
 					focus:text-orange-500"
                 >
                   <svg
