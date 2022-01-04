@@ -9,7 +9,9 @@ interface IProvider {
   name: string
 }
 
-export default function SignIn({ providers }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default function SignIn({
+  providers,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   const { data: session } = useSession()
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function SignIn({ providers }: InferGetServerSidePropsType<typeof
                           className="rounded bg-slate-50 text-stone-800 shadow-lg px-8 py-4 hover:bg-slate-500 w-80"
                           onClick={() =>
                             signIn(provider.id, {
-                              callbackUrl: `${window.location.origin}/profile`,
+                              callbackUrl: `/profile`,
                             })
                           }
                         >
