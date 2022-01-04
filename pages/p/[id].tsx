@@ -24,7 +24,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
 }
 
 async function deletePost(id: string): Promise<void> {
-  await fetch(`http://localhost:3000/api/post/${id}`, {
+  await fetch(`https://ccfeed.vercel.app/api/post/${id}`, {
     method: 'DELETE',
   })
   await Router.push('/')

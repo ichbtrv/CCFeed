@@ -35,7 +35,7 @@ const Create = (props) => {
 
       const body = { title, content, mediaUrl, showContentValue }
 
-      await fetch(`http://localhost:3000/api/post`, {
+      await fetch(`https://ccfeed.vercel.app/api/post`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
