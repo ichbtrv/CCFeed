@@ -23,7 +23,7 @@ const UploadForm = () => {
           media: Yup.string().required(),
           mediaPreview: Yup.string().required(),
         })}
-        onSubmit={async ({ media }, { setFieldValue }) => {
+        onSubmit={async ({ media }, { setSubmitting, setFieldValue }) => {
           try {
             setIsSubmitting(true)
             const formData = new FormData()
