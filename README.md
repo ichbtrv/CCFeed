@@ -5,16 +5,16 @@
 This app is an exercise in exploring the architecture of a more complex web app as well as working with a database. It has plenty of bugs as it stands right now, and overall I think I might have to take a step back and rethink my approach as opposed to going in and patching each fix. That's to come. 
 
 # Tech Used
-Next.JS
-TypeScript
-NextAuth
-Prisma
-PosgresSQL
-TailwindCSS
-Valtio
-Formik
-Yup
-ImageKit for Storage
+### Next.JS
+### TypeScript
+### NextAuth
+### Prisma
+### PosgresSQL
+### TailwindCSS
+### Valtio
+### Formik
+### Yup
+### ImageKit for Storage
 
 ## Prisma w/PostgresSql
 
@@ -50,23 +50,23 @@ I went with this for authorization because it is straightforward to implement an
 # Bugs and Features
 
 ## Working features:
--Authorization/ Registration
--Creation and Deletion of Posts 
--Chronological Feed 
--Capture Video from camera for Posts
--Can include description sticker on posts or not
--Profile Page
+-Authorization/ Registration <br/>
+-Creation and Deletion of Posts <br/>
+-Chronological Feed <br/>
+-Capture Video from camera for Posts <br/>
+-Can include description sticker on posts or not <br/>
+-Profile Page <br/>
 
 ## Bugs/ToDos:
--Authorization needs two clicks to work (should just be a redirect issue, this came about after switching auth client keys)
--Profile page Feed not chronological 
--Renders not optimized 
--Slow loading time esp/ on sub-optimal connections 
--No incremental loading 
--Images not supported
--No comments or interactions
--Delete and Post require refresh 
--Can't view other's profiles
--Inconsistent styles (Was experimenting to see which ones would result in a smoother UI)
+-Authorization needs two clicks to work (should just be a redirect issue, this came about after switching auth client keys) <br/>
+-Profile page Feed not chronological <br/>
+-Renders not optimized <br/>
+-Slow loading time esp/ on sub-optimal connections <br/>
+-No incremental loading <br/>
+-Images not supported <br/>
+-No comments or interactions <br/>
+-Delete and Post require refresh <br/>
+-Can't view other's profiles <br/>
+-Inconsistent styles (Was experimenting to see which ones would result in a smoother UI) <br/>
 
 [![](https://i.vimeocdn.com/video/1340049845-7d7891254c2d2a22a25906e16753ef80625ff2b30361122cb50e7f4c0222abc9-d_640)](https://vimeo.com/662309138)
